@@ -2,7 +2,7 @@ name: Cron Python Test
 
 on:
   schedule:
-    - cron: '59 13 * * *'
+    - cron: '10 14 * * *'
       timezone: 'Asia/Seoul'
 
 jobs:
