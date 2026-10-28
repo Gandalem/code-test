@@ -1,0 +1,21 @@
+on:
+  push: 
+    tags: 
+      - 'v*'
+
+jobs:
+  build-and-deloy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: chechout repository
+        uses: actions/chechout@v6
+
+      - name: set up python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: install dependenties
+        run: pip install ruff pytest build setuptools twine
+  
