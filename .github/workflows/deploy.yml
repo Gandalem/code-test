@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: chechout repository
-        uses: actions/chechout@v6
+        uses: actions/checkout@v6
 
       - name: set up python
         uses: actions/setup-python@v5
